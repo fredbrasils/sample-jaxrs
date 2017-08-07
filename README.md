@@ -1,6 +1,6 @@
 # README #
 
-(Português)
+### (Português) ###
 Esse projeto é um CRUD de Pessoas e Habilidades (Person and Skill) utilizando Spring-boot,
 Jersey (como implementação do JAX-RS), HSQLDB em memória e Maven.
 
@@ -25,7 +25,8 @@ Etapas:
 	
 	email: fredbrasils@hotmail
 	
-(English)
+### (English) ###
+
 This project is a CRUD of Person and Skill.
 This project use Spring-boot, Jersey (JAX-RS implementation), HSQLDB memory and Maven.	
 
