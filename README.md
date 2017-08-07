@@ -24,9 +24,9 @@ As URLs para Person são:
 	http://localhost:8080/person/{id}/firstName/{firstName} (PUT)    
 
 As URLs para Skill são:  
-	http://localhost:8080/skill (POST, GET, DELETE)
-	http://localhost:8080/skill/{id} (GET, PUT, DELETE)
-	http://localhost:8080/skill/{id}/description/{description} (PUT)
+	http://localhost:8080/skill (POST, GET, DELETE)  
+	http://localhost:8080/skill/{id} (GET, PUT, DELETE)  
+	http://localhost:8080/skill/{id}/description/{description} (PUT)  
 
  Exemplo JSON Person:  
   `{  
@@ -68,7 +68,7 @@ As URLs para Skill são:
 
 * Tive problemas com o Lazy Initialization com o JAXB com as coleções. Tive que setar as listas como null para não dar problema na resposta. Ainda não encontrei a melhor maneira pra resolver esse problema.
 	
-### Como quem falar?
+### Com quem falar?
 	
 	email: fredbrasils@hotmail
 	
