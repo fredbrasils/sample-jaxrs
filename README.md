@@ -1,29 +1,50 @@
 # README #
 
-This README would normally document whatever steps are necessary to get your application up and running.
+(Português)
+Esse projeto é um CRUD de Pessoas e Habilidades (Person and Skill) utilizando Spring-boot,
+Jersey (como implementação do JAX-RS), HSQLDB em memória e Maven.
 
-### What is this repository for? ###
+### Como rodar? ###
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+Etapas:
+	1 - Baixe o projeto.
+	2 - Abra o prompt. 
+	3 - Entre com o comando: cd jax-rs-sample
+	4 - Digite o comando: mvn spring-boot:run para executar o serviço
+
+	
+### Como rodar os teste? ###
+
+Etapas:
+	1 - Baixe o projeto.
+	2 - Abra o prompt 
+	3 - Entre com o comando: cd jax-rs-sample
+	4 - Digite o comando: mvn test para executar o teste
+
+### Como quem falar? ###
+	
+	email: fredbrasils@hotmail
+	
+(English)
+This project is a CRUD of Person and Skill.
+This project use Spring-boot, Jersey (JAX-RS implementation), HSQLDB memory and Maven.	
 
 ### How do I get set up? ###
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+Steps:
+	1 - Download project.
+	2 - Open prompt command. 
+	3 - Execute the command: cd jax-rs-sample
+	4 - Enter: mvn spring-boot:run to execute the service
 
-### Contribution guidelines ###
+### How do I test? ###
 
-* Writing tests
-* Code review
-* Other guidelines
-
+Steps:
+	1 - Download project.
+	2 - Open prompt command. 
+	3 - Execute the command: cd jax-rs-sample
+	4 - Enter: mvn test to execute the tests
+	
 ### Who do I talk to? ###
 
-* Repo owner or admin
-* Other community or team contact
+	email: fredbrasils@hotmail.com
