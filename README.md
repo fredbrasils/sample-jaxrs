@@ -17,44 +17,44 @@ Jersey (como implementação do JAX-RS), HSQLDB em memória e Maven.
 Eu utilizei o [Postman](https://www.getpostman.com/) para fazer os testes.  
 
 As URLs para Person são:  
-	* http://localhost:8080/person (POST, GET, DELETE)  
-	* http://localhost:8080/person/{id} (GET, PUT, DELETE)  
-	* http://localhost:8080/person/skills (GET)  
-	* http://localhost:8080/person/{id}/skills (GET)  
-	* http://localhost:8080/person/{id}/firstName/{firstName} (PUT)    
+	*http://localhost:8080/person (POST, GET, DELETE)  
+	*http://localhost:8080/person/{id} (GET, PUT, DELETE)  
+	*http://localhost:8080/person/skills (GET)  
+	*http://localhost:8080/person/{id}/skills (GET)  
+	*http://localhost:8080/person/{id}/firstName/{firstName} (PUT)    
 
 As URLs para Skill são:  
-	* http://localhost:8080/skill (POST, GET, DELETE)
-	* http://localhost:8080/skill/{id} (GET, PUT, DELETE)
-	* http://localhost:8080/skill/{id}/description/{description} (PUT)
+	*http://localhost:8080/skill (POST, GET, DELETE)
+	*http://localhost:8080/skill/{id} (GET, PUT, DELETE)
+	*http://localhost:8080/skill/{id}/description/{description} (PUT)
 
  Exemplo JSON Person:  
-  {
-   "id": 1,	
-   "firstName": "Pedro",
-   "lastName": "silva",
-   "linkedinUrl": "www.linkedin.com/pedro",
-   "whatsapp": 99995555,
-   "mail": "pedro@gmail.com",
-   "skills":[
- 		{
- 		  "tag": "PHP",
- 		  "description": "PHP Skill"
- 		},
- 		{
- 		  "tag": "Kanban",
- 		  "description": "Kanban Skill"
- 		}
-    ]
-   } 
+  '{  
+   "id": 1,  	
+   "firstName": "Pedro",  
+   "lastName": "silva",  
+   "linkedinUrl": "www.linkedin.com/pedro",  
+   "whatsapp": 99995555,  
+   "mail": "pedro@gmail.com",  
+   "skills":[  
+ 		{  
+ 		  "tag": "PHP",  
+ 		  "description": "PHP Skill"  
+ 		},  
+ 		{  
+ 		  "tag": "Kanban",  
+ 		  "description": "Kanban Skill"  
+ 		}  
+    ]  
+   }'   
 	
  Exemplo JSON Skill:  
-   {
- 		{
- 		  "tag": "PHP",
- 		  "description": "PHP Skill"
- 		}
-   } 
+   '{  
+ 		{  
+ 		  "tag": "PHP",  
+ 		  "description": "PHP Skill"  
+ 		}  
+   }'   
 	
 ### Como rodar os teste?
 
