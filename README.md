@@ -79,66 +79,66 @@ This project use Spring-boot, Jersey (JAX-RS implementation), HSQLDB memory and 
 
 ### How do I get set up? ###
 
-#### Steps: #### 
-	* 1 - Download project.
-	* 2 - Open prompt command. 
-	* 3 - Execute the command: cd jax-rs-sample
-	* 4 - Enter: mvn spring-boot:run to execute the service
+#### Steps:
+	1. Download project.
+	2. Open prompt command. 
+	3. Execute the command: cd jax-rs-sample
+	4. Enter: mvn spring-boot:run to execute the service
 
-#### How I use the service ? #### 
+#### How I use the service ?  
 
-* I used Postman (https://www.getpostman.com/) to call the services.
+I used Postman (https://www.getpostman.com/) to call the services.  
 
-* URLs (Person) are:
-** http://localhost:8080/person (POST, GET, DELETE)
-** http://localhost:8080/person/{id} (GET, PUT, DELETE)
-** http://localhost:8080/person/skills (GET)
-** http://localhost:8080/person/{id}/skills (GET)
-** http://localhost:8080/person/{id}/firstName/{firstName} (PUT)
+URLs (Person) are:  
+http://localhost:8080/person (POST, GET, DELETE)  
+http://localhost:8080/person/{id} (GET, PUT, DELETE)  
+http://localhost:8080/person/skills (GET)  
+http://localhost:8080/person/{id}/skills (GET)  
+http://localhost:8080/person/{id}/firstName/{firstName} (PUT)  
 
-* URLs (Skill) are:
-** http://localhost:8080/skill (POST, GET, DELETE)
-** http://localhost:8080/skill/{id} (GET, PUT, DELETE)
-** http://localhost:8080/skill/{id}/description/{description} (PUT)
+URLs (Skill) are:   
+http://localhost:8080/skill (POST, GET, DELETE)  
+http://localhost:8080/skill/{id} (GET, PUT, DELETE)  
+http://localhost:8080/skill/{id}/description/{description} (PUT)  
 
-* Example JSON Person:
-* {
-*   "id": 1,	
-*   "firstName": "Pedro",
-*   "lastName": "silva",
-*   "linkedinUrl": "www.linkedin.com/pedro",
-*   "whatsapp": 99995555,
-*   "mail": "pedro@gmail.com",
-*   "skills":[
-* 		{
-* 		  "tag": "PHP",
-* 		  "description": "PHP Skill"
-* 		},
-* 		{
-* 		  "tag": "Kanban",
-* 		  "description": "Kanban Skill"
-* 		}
-*  ]
-* } 
+ Example JSON Person:
+ `{  
+   "id": 1,  	
+   "firstName": "Pedro",  
+   "lastName": "silva",  
+   "linkedinUrl": "www.linkedin.com/pedro",  
+   "whatsapp": 99995555,  
+   "mail": "pedro@gmail.com",  
+   "skills":[  
+ 		{  
+ 		  "tag": "PHP",  
+ 		  "description": "PHP Skill"  
+ 		},  
+ 		{  
+ 		  "tag": "Kanban",  
+ 		  "description": "Kanban Skill"  
+ 		}  
+    ]  
+   }` 
 	
-* Example JSON Skill:
-* {
-* 		{
-* 		  "tag": "PHP",
-* 		  "description": "PHP Skill"
-* 		}
-* } 
+Example JSON Skill:
+ `{  
+ 		{  
+ 		  "tag": "PHP",  
+ 		  "description": "PHP Skill"  
+ 		}  
+   }`  
 
 
-### How do I test? ###
+### How do I test?
 
-#### Steps: #### 
-	* 1 - Download project.
-	* 2 - Open prompt command. 
-	* 3 - Execute the command: cd jax-rs-sample
-	* 4 - Enter: mvn test to execute the tests
+#### Steps: 
+	1. Download project.
+	2. Open prompt command. 
+	3. Execute the command: cd jax-rs-sample
+	4. Enter: mvn test to execute the tests
 	
-### Problem ? ###
+### Problem ?
 
 * Lazy Initialization with JAXB collections. 
 
