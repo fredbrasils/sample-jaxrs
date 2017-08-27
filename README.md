@@ -1,76 +1,4 @@
 # README #
-
-### (Português)
-Esse projeto é um CRUD de Pessoas e Habilidades (Person and Skill) utilizando Spring-boot,
-Jersey (como implementação do JAX-RS), HSQLDB em memória e Maven.
-
-### Como rodar?
-
-#### Etapas:
-	1. Baixe o projeto.
-	2. Abra o prompt. 
-	3. Entre com o comando: cd jax-rs-sample
-	4. Digite o comando: mvn spring-boot:run para executar o serviço
-
-#### Como usar os servicos ?  
-
-Eu utilizei o [Postman](https://www.getpostman.com/) para fazer os testes.  
-
-As URLs para Person são:  
-> http://localhost:8080/person (POST, GET, DELETE)  
-> http://localhost:8080/person/{id} (GET, PUT, DELETE)  
-> http://localhost:8080/person/skills (GET)  
-> http://localhost:8080/person/{id}/skills (GET)  
-> http://localhost:8080/person/{id}/firstName/{firstName} (PUT)     
-
-As URLs para Skill são:  
-> http://localhost:8080/skill (POST, GET, DELETE)  
-> http://localhost:8080/skill/{id} (GET, PUT, DELETE)  
-> http://localhost:8080/skill/{id}/description/{description} (PUT) 
-
- Exemplo JSON Person:  
-  `{  
-   "id": 1,  	
-   "firstName": "Pedro",  
-   "lastName": "silva",  
-   "linkedinUrl": "www.linkedin.com/pedro",  
-   "whatsapp": 99995555,  
-   "mail": "pedro@gmail.com",  
-   "skills":[  
- 		{  
- 		  "tag": "PHP",  
- 		  "description": "PHP Skill"  
- 		},  
- 		{  
- 		  "tag": "Kanban",  
- 		  "description": "Kanban Skill"  
- 		}  
-    ]  
-   }`   
-	
- Exemplo JSON Skill:  
-   `{  
- 		{  
- 		  "tag": "PHP",  
- 		  "description": "PHP Skill"  
- 		}  
-   }`   
-	
-### Como rodar os teste?
-
-#### Etapas:
-	1. Baixe o projeto.
-	2. Abra o prompt 
-	3. Entre com o comando: cd jax-rs-sample
-	4. Digite o comando: mvn test para executar o teste
-
-### Problemas ?
-
-* Tive problemas com o Lazy Initialization com o JAXB com as coleções. Tive que setar as listas como null para não dar problema na resposta. Ainda não encontrei a melhor maneira pra resolver esse problema.
-	
-### Com quem falar?
-	
-	email: fredbrasils@hotmail
 	
 ### (English) ###
 
@@ -145,3 +73,76 @@ Example JSON Skill:
 ### Who do I talk to? ###
 
 	email: fredbrasils@hotmail.com
+
+
+### (Português)
+Esse projeto é um CRUD de Pessoas e Habilidades (Person and Skill) utilizando Spring-boot,
+Jersey (como implementação do JAX-RS), HSQLDB em memória e Maven.
+
+### Como rodar?
+
+#### Etapas:
+	1. Baixe o projeto.
+	2. Abra o prompt. 
+	3. Entre com o comando: cd jax-rs-sample
+	4. Digite o comando: mvn spring-boot:run para executar o serviço
+
+#### Como usar os servicos ?  
+
+Eu utilizei o [Postman](https://www.getpostman.com/) para fazer os testes.  
+
+As URLs para Person são:  
+> http://localhost:8080/person (POST, GET, DELETE)  
+> http://localhost:8080/person/{id} (GET, PUT, DELETE)  
+> http://localhost:8080/person/skills (GET)  
+> http://localhost:8080/person/{id}/skills (GET)  
+> http://localhost:8080/person/{id}/firstName/{firstName} (PUT)     
+
+As URLs para Skill são:  
+> http://localhost:8080/skill (POST, GET, DELETE)  
+> http://localhost:8080/skill/{id} (GET, PUT, DELETE)  
+> http://localhost:8080/skill/{id}/description/{description} (PUT) 
+
+ Exemplo JSON Person:  
+  `{  
+   "id": 1,  	
+   "firstName": "Pedro",  
+   "lastName": "silva",  
+   "linkedinUrl": "www.linkedin.com/pedro",  
+   "whatsapp": 99995555,  
+   "mail": "pedro@gmail.com",  
+   "skills":[  
+ 		{  
+ 		  "tag": "PHP",  
+ 		  "description": "PHP Skill"  
+ 		},  
+ 		{  
+ 		  "tag": "Kanban",  
+ 		  "description": "Kanban Skill"  
+ 		}  
+    ]  
+   }`   
+	
+ Exemplo JSON Skill:  
+   `{  
+ 		{  
+ 		  "tag": "PHP",  
+ 		  "description": "PHP Skill"  
+ 		}  
+   }`   
+	
+### Como rodar os teste?
+
+#### Etapas:
+	1. Baixe o projeto.
+	2. Abra o prompt 
+	3. Entre com o comando: cd jax-rs-sample
+	4. Digite o comando: mvn test para executar o teste
+
+### Problemas ?
+
+* Tive problemas com o Lazy Initialization com o JAXB com as coleções. Tive que setar as listas como null para não dar problema na resposta. Ainda não encontrei a melhor maneira pra resolver esse problema.
+	
+### Com quem falar?
+	
+	email: fredbrasils@hotmail
